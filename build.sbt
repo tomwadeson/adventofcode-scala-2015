@@ -19,3 +19,8 @@ lazy val day2 = (project in file("day-2")).
 lazy val day3 = (project in file("day-3")).
   settings(commonSettings: _*).
   settings(libraryDependencies ++= commonDependencies)
+
+lazy val day4 = (project in file("day-4")).
+  settings(commonSettings: _*).
+  settings(libraryDependencies ++= commonDependencies).
+  settings(libraryDependencies ++= Seq("commons-codec" % "commons-codec" % "1.10"))
